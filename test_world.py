@@ -16,12 +16,12 @@ class TestAgent:
     AGENT = script.Agent(3)
     # - Agent : 
     #   - récupérer un attribut position
+    def test_get_position(self):
+        assert self.AGENT.position == 3
+  
+    #   - modifier un attribut position
     def test_set_position(self):
         self.AGENT.position = 5
-        assert self.AGENT.position == 5
-
-    #   - modifier un attribut position
-    def test_get_position(self):
         assert self.AGENT.position == 5
 
     #   - assigner un dictionnaire en tant qu'attributs
